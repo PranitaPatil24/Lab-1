@@ -1,0 +1,5 @@
+cd C:\DCS
+
+cl /EHsc sum_mpi.cpp /I "C:\Program Files (x86)\Microsoft SDKs\MPI\Include" /link /LIBPATH:"C:\Program Files (x86)\Microsoft SDKs\MPI\Lib\x64" msmpi.lib /out:sum_mpi.exe
+
+mpiexec -n 4 sum_mpi.exe

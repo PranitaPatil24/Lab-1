@@ -1,0 +1,3 @@
+Information retrieval systems are designed to find relevant documents.
+Retrieval is based on matching words between the user's query and stored documents.
+Different forms of the same word, like connect, connecting, and connection, are reduced to a single root form.
