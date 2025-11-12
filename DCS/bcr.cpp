@@ -24,7 +24,7 @@ void berkeley() {
 
 // ========== BULLY ==========
 void bully() {
-    int nodes[5] = {1, 2, 3, 4, 5};
+    int nodes[6] = {1, 2, 3, 4, 5, 6};
     int failed = 5;   // node 5 is down
     int starter = 2;  // node 2 starts election
     int newLeader = starter;
@@ -33,7 +33,7 @@ void bully() {
     cout << "Node " << failed << " is down.\n";
     cout << "Node " << starter << " starts election...\n";
 
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < 6; i++) {
         int n = nodes[i];
         if (n > starter && n != failed) {
             cout << "Node " << n << " responds (higher).\n";
@@ -86,3 +86,6 @@ int main() {
 
     return 0;
 }
+// g++ B_C_R.cpp -o B_C_R
+// ./B_C_R
+// or  B_C_R.exe
